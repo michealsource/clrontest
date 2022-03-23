@@ -2,8 +2,9 @@
 import './App.css';
 import React,{useState,useEffect} from 'react'
 import IndexRoutes from './Routes/index'
-import { requestFirebaseNotificationPermission, onMessageListener } from "./firebaseConfig"
+// import { requestFirebaseNotificationPermission, onMessageListener } from "./firebaseConfig"
 import {ShowMessage, type} from "../src/Component/Toaster"
+import LandingPage from './Pages/landingPage.js/LandingPage'
 function App() {
 //   const [token, setToken] = useState("")
 //   requestFirebaseNotificationPermission()
@@ -27,7 +28,8 @@ function App() {
 // });
 
   return (
-    <IndexRoutes/>
+    // <IndexRoutes/>
+    <LandingPage/>
   );
 }
 
